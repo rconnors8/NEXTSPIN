@@ -1,14 +1,14 @@
 {
-  "name": "VibeDev",
-  "short_name": "VibeDev",
+  "name": "NextSpin 360 Photo Booth",
+  "short_name": "NextSpin",
   "icons": [
     {
-      "src": "/images/idevibelogo.png",
+      "src": "/images/logo.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/images/idevibelogo.png",
+      "src": "/images/logo.png",
       "sizes": "512x512",
       "type": "image/png"
     }

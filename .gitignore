@@ -34,9 +34,5 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# development environment
-.cache/
-.config/
-.upm/
-.replit
-replit.nix
+# database
+prisma/dev.db

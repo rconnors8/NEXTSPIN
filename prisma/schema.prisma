@@ -1,0 +1,30 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model Booking {
+  id        String   @id @default(uuid())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  name         String
+  email        String
+  phone        String?
+  eventType    String
+  eventDate    DateTime
+  venueAddress String?
+  hours        Int     @default(2)
+  package      String  @default("LETS_JUST_SPIN") // LETS_JUST_SPIN, RED_CARPET_SPECIAL
+  details      String?
+  status       String  @default("PENDING") // PENDING, CONFIRMED, CANCELLED
+
+  @@map("bookings")
+} 

@@ -15,33 +15,33 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "vibedev.ai",
-  description: "Experience the new way of coding with vibedev.ai. Transform your development workflow and vibe with your code like never before.",
+  title: "NextSpin 360 Photo Booth Renting",
+  description: "Experience the magic of 360-degree photo booth rentals. Perfect for weddings, corporate events, parties, and special occasions. Create unforgettable memories with NextSpin.",
   icons: {
     icon: [
       {
-        url: "/images/idevibelogo.png",
+        url: "/images/logo.png",
         type: "image/png",
         sizes: "32x32"
       },
       {
-        url: "/images/idevibelogo.png",
+        url: "/images/logo.png",
         type: "image/png",
         sizes: "16x16"
       }
     ],
     apple: [
       {
-        url: "/images/idevibelogo.png",
+        url: "/images/logo.png",
         type: "image/png",
         sizes: "180x180"
       }
     ],
-    shortcut: [{ url: "/images/idevibelogo.png" }],
+    shortcut: [{ url: "/images/logo.png" }],
     other: [
       {
         rel: "icon",
-        url: "/images/idevibelogo.png",
+        url: "/images/logo.png",
       },
     ],
   },
@@ -60,9 +60,9 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <head>
-        <link rel="icon" type="image/png" sizes="32x32" href="/images/idevibelogo.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/images/idevibelogo.png" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/images/idevibelogo.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/images/logo.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/images/logo.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/images/logo.png" />
         <link rel="manifest" href="/manifest.json" />
       </head>
       <body className={`${inter.className} bg-black bg-dotted-grid`}>{children}</body>
