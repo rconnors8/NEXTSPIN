@@ -162,7 +162,7 @@ export default function Page() {
             {/* Logo */}
             <div className="mb-8 relative w-48 h-48 mx-auto">
               <Image 
-                src="/images/logo.png"
+                src="/images/logo.svg"
                 alt="NextSpin Logo"
                 fill
                 priority

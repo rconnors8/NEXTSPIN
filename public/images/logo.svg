@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <g>
-    <path d="M256 64C150.4 64 64 150.4 64 256s86.4 192 192 192 192-86.4 192-192S361.6 64 256 64zm0 352c-88.2 0-160-71.8-160-160s71.8-160 160-160 160 71.8 160 160-71.8 160-160 160z" fill="#004D4D"/>
-    <path d="M368 176h-32l-32-32h-96l-32 32h-32c-17.7 0-32 14.3-32 32v160c0 17.7 14.3 32 32 32h224c17.7 0 32-14.3 32-32V208c0-17.7-14.3-32-32-32zm-112 192c-44.2 0-80-35.8-80-80s35.8-80 80-80 80 35.8 80 80-35.8 80-80 80z" fill="#004D4D"/>
-    <circle cx="256" cy="288" r="64" fill="#004D4D"/>
-    <path d="M384 160l-32 32v160l32 32V160z" fill="#004D4D"/>
-  </g>
+<svg width="192" height="192" viewBox="0 0 192 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700" />
+      <stop offset="50%" style="stop-color:#FCC200" />
+      <stop offset="100%" style="stop-color:#B8860B" />
+    </linearGradient>
+  </defs>
+  <circle cx="96" cy="96" r="88" stroke="url(#gradient)" stroke-width="16" fill="none" />
+  <path d="M96 32v128M32 96h128" stroke="url(#gradient)" stroke-width="12" stroke-linecap="round" />
+  <circle cx="96" cy="96" r="32" stroke="url(#gradient)" stroke-width="8" fill="none" />
 </svg> 

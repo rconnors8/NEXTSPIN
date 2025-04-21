@@ -15,42 +15,44 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "NextSpin 360 Photo Booth Renting",
-  description: "Experience the magic of 360-degree photo booth rentals. Perfect for weddings, corporate events, parties, and special occasions. Create unforgettable memories with NextSpin.",
+  title: "NextSpin - 360° Photo Booth Rentals",
+  description: "Create unforgettable memories with NextSpin 360° Photo Booth. Perfect for weddings, corporate events, and parties.",
   icons: {
     icon: [
       {
-        url: "/images/logo.png",
-        type: "image/png",
+        url: "/images/logo.svg",
+        type: "image/svg+xml",
         sizes: "32x32"
       },
       {
-        url: "/images/logo.png",
-        type: "image/png",
+        url: "/images/logo.svg",
+        type: "image/svg+xml",
         sizes: "16x16"
       }
     ],
     apple: [
       {
-        url: "/images/logo.png",
-        type: "image/png",
+        url: "/images/logo.svg",
+        type: "image/svg+xml",
         sizes: "180x180"
       }
     ],
-    shortcut: [{ url: "/images/logo.png" }],
+    shortcut: [{ url: "/images/logo.svg" }],
     other: [
       {
         rel: "icon",
-        url: "/images/logo.png",
+        url: "/images/logo.svg",
       },
     ],
   },
   manifest: "/manifest.json",
-  viewport: {
-    width: 'device-width',
-    initialScale: 1
-  }
-};
+}
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+}
 
 export default function RootLayout({
   children,
@@ -60,9 +62,9 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <head>
-        <link rel="icon" type="image/png" sizes="32x32" href="/images/logo.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/images/logo.png" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/images/logo.png" />
+        <link rel="icon" type="image/svg+xml" sizes="32x32" href="/images/logo.svg" />
+        <link rel="icon" type="image/svg+xml" sizes="16x16" href="/images/logo.svg" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/images/logo.svg" />
         <link rel="manifest" href="/manifest.json" />
       </head>
       <body className={`${inter.className} bg-black bg-dotted-grid`}>{children}</body>
